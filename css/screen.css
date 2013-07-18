@@ -41,81 +41,33 @@ a:visited {
 
 /* line 51, ../sass/screen.scss */
 nav {
-  height: 40px;
+  height: auto;
   width: 100%;
   background: #9aba97;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   position: relative;
 }
-@media (max-width: 600px) {
-  /* line 51, ../sass/screen.scss */
-  nav {
-    height: auto;
-  }
-}
-@media (max-width: 480px) {
-  /* line 51, ../sass/screen.scss */
-  nav {
-    max-width: 480px;
-  }
-}
-/* line 64, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 nav ul {
   list-style-type: none;
-  margin: 0 auto;
-  width: 600px;
-  height: 40px;
+  margin: 40px auto 0;
+  width: 100%;
+  height: auto;
+  display: none;
 }
-@media (max-width: 600px) {
-  /* line 64, ../sass/screen.scss */
-  nav ul {
-    width: 100%;
-    display: block;
-    height: auto;
-  }
-}
-@media (max-width: 480px) {
-  /* line 64, ../sass/screen.scss */
-  nav ul {
-    display: none;
-    margin-top: 40px;
-  }
-}
-/* line 79, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 nav li {
-  float: left;
+  width: 100%;
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
-@media (max-width: 600px) {
-  /* line 79, ../sass/screen.scss */
-  nav li {
-    width: 50%;
-    position: relative;
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-  }
-  /* line 89, ../sass/screen.scss */
-  nav li:nth-child(even) {
-    border-right: 0;
-  }
-}
-@media (max-width: 320px) {
-  /* line 79, ../sass/screen.scss */
-  nav li {
-    display: block;
-    float: none;
-    width: 100%;
-  }
-  /* line 97, ../sass/screen.scss */
-  nav li:nth-child(odd) {
-    border-right: 0;
-  }
-}
-/* line 101, ../sass/screen.scss */
-nav li a {
+/* line 74, ../sass/screen.scss */
+nav a {
   width: 100px;
   color: #fff;
   display: block;
@@ -123,44 +75,29 @@ nav li a {
   text-transform: uppercase;
   line-height: 40px;
 }
-/* line 108, ../sass/screen.scss */
-nav li a:hover {
+/* line 81, ../sass/screen.scss */
+nav a:hover {
   background-color: #86bb81;
 }
-/* line 111, ../sass/screen.scss */
-nav li a:active {
+/* line 84, ../sass/screen.scss */
+nav a:active {
   background-color: #8c99a4;
 }
-@media (max-width: 600px) {
-  /* line 101, ../sass/screen.scss */
-  nav li a {
-    width: 100%;
-    text-align: left;
-    text-indent: 25px;
-  }
+
+/* line 92, ../sass/screen.scss */
+a#mobile {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  top: 0;
 }
-/* line 124, ../sass/screen.scss */
-nav a#mobile {
-  display: none;
-}
-@media (max-width: 480px) {
-  /* line 124, ../sass/screen.scss */
-  nav a#mobile {
-    display: block;
-    background: #9aba97;
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    border-bottom: 1px solid #fff;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    position: absolute;
-    top: 0;
-  }
-}
-/* line 139, ../sass/screen.scss */
-nav a#mobile:after {
+/* line 102, ../sass/screen.scss */
+a#mobile:after {
   content: "";
   background: url(../img/menu-icon.png) no-repeat;
   width: 30px;
@@ -168,5 +105,5 @@ nav a#mobile:after {
   display: block;
   position: absolute;
   top: 5px;
-  right: 10px;
+  left: 5px;
 }

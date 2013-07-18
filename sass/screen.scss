@@ -49,84 +49,48 @@ a{
 ////////// & Nav //////////
 
 nav {
-	height: 40px;
+	height: auto; 
 	width: 100%;
 	background: #9aba97;
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	position: relative;
-	@include breakpoint(medium) { 
-		height: auto; 
-	}
-	@include breakpoint(landscape) { 
-		max-width: 480px; 
-	}
 	ul {
 		list-style-type: none;
-		margin: 0 auto;
-		width: 600px;
-		height: 40px;
-		@include breakpoint(medium) { 
-			width: 100%;
-			display: block;
-			height: auto;
-		}
-		@include breakpoint(landscape) { 
-			display: none;
-			margin-top: 40px;
-		}
+		margin: 40px auto 0;
+		width: 100%;
+		height: auto;
+		display: none;
 	}
 	li {
-		float: left;
-		@include breakpoint(medium) { 
-			width: 50%;
-			position: relative;
-			border-right: 1px solid #fff;
-			border-bottom: 1px solid #fff;
-			box-sizing:border-box;
-			-moz-box-sizing:border-box;
-			-webkit-box-sizing:border-box;
-			&:nth-child(even){
-				border-right: 0;
-			}
+		width: 100%;
+		display: block;
+		position: relative;
+		border-bottom: 1px solid #fff;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
 		}
-		@include breakpoint(portrait) {
-			display: block;
-			float: none;
-			width: 100%;
-			&:nth-child(odd){
-				border-right: 0;
-			}
+	a {
+		width: 100px;
+		color: #fff;
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 40px;
+		&:hover{
+			background-color: #86bb81;
 		}
-		a {
-			width: 100px;
-			color: #fff;
-			display: block;
-			text-align: center;
-			text-transform: uppercase;
-			line-height: 40px;
-			&:hover{
-				background-color: #86bb81;
-			}
-			&:active{
-				background-color: #8c99a4;
-			}
-			@include breakpoint(medium) { 
-			width: 100%;
-			text-align: left;
-			text-indent: 25px;
-			}
+		&:active{
+			background-color: #8c99a4;
 		}
 	}
+}
 
 ////////// Mobile Nav //////////
 
-	a#mobile{
-		display: none;
-		@include breakpoint(landscape) { 
-			display: block;
-			background: #9aba97;
-			width: 100%;
+	a#mobile{ 
+			width: 40px;
 			height:40px;;
 			padding: 10px;
 			border-bottom: 1px solid #fff;
@@ -135,7 +99,6 @@ nav {
 			-webkit-box-sizing:border-box;
 			position: absolute;
 			top: 0;
-		}
 		&:after{
 			content: "";
 			background: url(../img/menu-icon.png) no-repeat;
@@ -144,9 +107,9 @@ nav {
 			display: block;
 			position: absolute;
 			top: 5px;
-			right: 10px;
+			left: 5px;
 		}
 	}
-}
+
 
 
