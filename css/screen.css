@@ -1,45 +1,45 @@
-/* line 18, ../sass/screen.scss */
+/* line 5, ../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 9, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
 .clearfix {
   *zoom: 1;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 a {
   color: #fff;
   text-decoration: none;
 }
-/* line 38, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 a:hover {
   color: white;
 }
-/* line 41, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 a:active {
   color: white;
 }
-/* line 44, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 a:visited {
   color: white;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 nav {
   height: auto;
   width: 100%;
@@ -48,7 +48,7 @@ nav {
   font-weight: bold;
   position: relative;
 }
-/* line 58, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 nav ul {
   list-style-type: none;
   margin: 40px auto 0;
@@ -56,7 +56,7 @@ nav ul {
   height: auto;
   display: none;
 }
-/* line 65, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 nav li {
   width: 100%;
   display: block;
@@ -66,7 +66,7 @@ nav li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-/* line 74, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 nav a {
   width: 100px;
   color: #fff;
@@ -75,16 +75,16 @@ nav a {
   text-transform: uppercase;
   line-height: 40px;
 }
-/* line 81, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 nav a:hover {
   background-color: #86bb81;
 }
-/* line 84, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 nav a:active {
   background-color: #8c99a4;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 a#mobile {
   width: 40px;
   height: 40px;
@@ -96,7 +96,7 @@ a#mobile {
   position: absolute;
   top: 0;
 }
-/* line 102, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 a#mobile:after {
   content: "";
   background: url(../img/menu-icon.png) no-repeat;
