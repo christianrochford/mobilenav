@@ -21,7 +21,7 @@
 						<li><a href="#">Blog</a></li>
 						<li><a href="#">Contact</a></li>	
 					</ul>
-					<a href="#" id="mobile">Menu</a>
+					<a href="#" id="mobile"></a>
 				</nav>
 			</header>
 
@@ -29,21 +29,11 @@
   <script src="js/jquery-1.10.1.js"></script>
   <script>
 
-  	$(function() {
-		var mobile = $('#mobile');
-		menu = $('nav ul');
-
-	$(mobile).on('click', function(e) {
-		e.preventDefault();
-		menu.slideToggle();
-	});
-	});
-
-	$(window).resize(function(){
-	var w = $(window).width();
-	if(w > 320 && menu.is(':hidden')) {
-		menu.removeAttr('style');
-	}
+  	$(document).ready(function(){
+		$('#mobile').on('click', function(e) {
+			e.preventDefault();
+			$('nav ul').slideToggle();
+		});
 	});
 
   </script>
